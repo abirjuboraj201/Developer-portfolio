@@ -279,21 +279,84 @@ footer textarea {
 
 /* small device */
 @media screen and (max-width: 576px) {
-  .skill-container,
+  
+  
+    .banner, .btn-secondary
+    {
+        margin: 0;
+    }
+  
+  .banner-greetings
+  {
+    margin-top: 20px;
+  }
+  .banner-content
+  {
+    width: 100%;
+  }
+  .banner-description
+  {
+    text-align: justify;
+    /* margin: 0; */
+  }
+  .banner-pro-pic
+  {
+    width: 100%;
+  }
+  .banner-title
+  {
+    font-size: 50px;
+  }
+  .banner-greetings
+  {
+    font-size: 30px;
+  }
+  header
+  {
+    background-image: none;
+  }
+  
+  nav {
+    margin: 0;
+    text-align: left;
+    align-items: start;
+  }
+  
+  nav ul 
+  {
+    padding: 0;
+  }
+ 
+  nav ul li 
+  {
+    margin-right: 30px;
+    
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+    .skill-container,
   .resume-container,
+  .banner,
+  nav,
   footer {
     flex-direction: column;
     gap: 20px;
   }
-  .skill-container
-  {
+  .skill-container {
     padding: 0 50px;
   }
-  .resume-container
-  {
+  .resume-container {
     margin-top: 20px;
   }
-  .skill-section-description, .about,   
+  .skill-section-description,
+  .about,
   footer {
     padding: 5px 10px;
     text-align: justify;
@@ -301,10 +364,9 @@ footer textarea {
   .skill {
     text-align: left;
   }
-  .about-items
-  {
+  .about-items {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
   }
 }
